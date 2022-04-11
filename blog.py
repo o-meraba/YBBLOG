@@ -6,13 +6,7 @@ app  = Flask(__name__)
 
 @app.route("/")
 def index():
-    sayi = 10
-    sayi2 = 20
-    article = dict()
-    article["title"] = "Book Title"
-    article["body"] = "Book Body"
-    article["author"] = "Book Author"
-    return render_template("index.html",number = sayi, number2 = sayi2, article = article)
+    return render_template("index.html")
 
 @app.route('/about')
 def about():
