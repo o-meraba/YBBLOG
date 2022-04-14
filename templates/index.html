@@ -5,14 +5,10 @@
     <h3> Yazılım Bilimi Bloğuma Hoşgeldiniz </h3>
     <p>Bu blogta geliştiriciler olarak blog yazılarınızı paylaşabilirsiniz.</p>
 </div>
-
-{% if islem == 1 %}
-
-<p>Cevap 1 </p>
-{% elif islem == 2 %}
-<p> Cevap 2</p>
-{% else %}
-<p> Gecersiz işlem</p>
-{% endif %}
+<ul>
+    {% for number in numbers  %}
+        <li>{{number}} </li>
+    {% endfor %}
+</ul>
 
 {% endblock body %}
