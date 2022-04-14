@@ -6,8 +6,9 @@
     <p>Bu blogta geliştiriciler olarak blog yazılarınızı paylaşabilirsiniz.</p>
 </div>
 <ul>
-    {% for number in numbers  %}
-        <li>{{number}} </li>
+
+    {% for article in articles %}
+        <li>Article Id: {{article.id}} - Title : {{article.title}} - Content : {{article.content}}</li>
     {% endfor %}
 </ul>
 
